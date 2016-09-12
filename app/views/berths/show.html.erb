@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @berth.description %>
+</p>
+
+<p>
+  <strong>Power:</strong>
+  <%= @berth.power %>
+</p>
+
+<p>
+  <strong>Water:</strong>
+  <%= @berth.water %>
+</p>
+
+<p>
+  <strong>Max length:</strong>
+  <%= @berth.max_length %>
+</p>
+
+<p>
+  <strong>Max width:</strong>
+  <%= @berth.max_width %>
+</p>
+
+<p>
+  <strong>Bridge:</strong>
+  <%= @berth.bridge %>
+</p>
+
+<%= link_to 'Edit', edit_berth_path(@berth) %> |
+<%= link_to 'Back', berths_path %>

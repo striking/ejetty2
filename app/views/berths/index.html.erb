@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Berths</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Power</th>
+      <th>Water</th>
+      <th>Max length</th>
+      <th>Max width</th>
+      <th>Bridge</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @berths.each do |berth| %>
+      <tr>
+        <td><%= berth.description %></td>
+        <td><%= berth.power %></td>
+        <td><%= berth.water %></td>
+        <td><%= berth.max_length %></td>
+        <td><%= berth.max_width %></td>
+        <td><%= berth.bridge %></td>
+        <td><%= link_to 'Show', berth %></td>
+        <td><%= link_to 'Edit', edit_berth_path(berth) %></td>
+        <td><%= link_to 'Destroy', berth, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Berth', new_berth_path %>

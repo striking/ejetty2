@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyText
+  power: false
+  water: false
+  max_length: 1
+  max_width: 1
+  bridge: false
+
+two:
+  description: MyText
+  power: false
+  water: false
+  max_length: 1
+  max_width: 1
+  bridge: false
